@@ -1,3 +1,23 @@
+@font-face{
+    font-family: "font";
+    src:url("/asset/font.woff2")format("woff2"),
+        url("/asset/font.woff")format("woff");
+}
+@font-face{
+    font-family: "TTIT";
+    src: url("/asset/TTIT.woff2")format("woff2"),
+        url("/asset/TTIT.woff")format("woff");
+}
+.TTBBFont{
+    font-family: "font";
+    font-size: 4em;
+}
+
+.TTITFont{
+    font-family: TTIT;
+    font-size: 1.5em;
+}
+
 .flex{
     display: flex;
     flex-wrap:wrap;
