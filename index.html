@@ -15,6 +15,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- processing.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
 
     <title>About Alsterium</title>
   </head>
@@ -49,8 +51,13 @@
       </div>
       <div id="modal1" class="modal">
         <div class="modal-content">
+          <div class="resimg">
+            <img src="./image/IMG_4523.jpeg">
+          </div>
           <h4>紙を用いた波の表現</h4>
-          <p>A bunch of text</p>
+          <p>
+            再帰的な図形に興味があり、紙を用いた波の表現というテーマを再帰的に表現できないかという観点からデザインしました。
+          </p>
         </div>
         <div class="modal-footer">
           <a
@@ -74,7 +81,19 @@
       <div id="modal2" class="modal">
         <div class="modal-content">
           <h4>カラーブランチ</h4>
-          <p>A bunch of text</p>
+          <h5>コンセプト</h5>
+          <p>
+            バージョン管理ソフトのGit
+            をイメージして、パズルの形に切った色カードを繋げ、一つのつながりをGit
+            のCommit と捉え、色の系統ごとにブランチさせました。
+          </p>
+          <h5>制作プロセス</h5>
+          <p>
+            色カードをただつなげたり、並べたりしても面白くないと思ったので、繋げるというイメージからパズルの
+            ピースの形を使うことを思いつきました。パズルのピース型の色カードを繋げて色々な配置を試したが、グラデー
+            ションさせたりするのがあまりしっくりこなかったので、Git
+            に見立てて配置することを思いつき、作品を制作しました。
+          </p>
         </div>
         <div class="modal-footer">
           <a
@@ -85,7 +104,7 @@
         </div>
       </div>
       <div class="col s12 m4 offset-m4 l4 offset-l4">
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal3">
           <div class="card-image">
             <img src="image/imagea.jpg" />
           </div>
@@ -94,11 +113,24 @@
           </div>
         </div>
       </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <h4>自己表現</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col s12 m4 l4 offset-m2 offset-l2">
         <h5>制作したプログラム</h5>
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal4">
           <div class="card-image">
             <img src="image/imagec.jpg" />
           </div>
@@ -109,9 +141,27 @@
           </div>
         </div>
       </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <h4>Processingでのビジュアル表現プログラミング</h4>
+          <p>
+            Processingによる動的な波の表現。時間とともに波の形と波のグラデーションが変化します。
+          </p>
+          <canvas
+            data-processing-sources="./asset/waves_with_colors.pde"
+          ></canvas>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
       <div class="col s12 m4 l4">
         <h5>ㅤ</h5>
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal5">
           <div class="card-image">
             <img src="image/image7.png" />
           </div>
@@ -120,8 +170,45 @@
           </div>
         </div>
       </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h4>LineStampMaker</h4>
+          <div class="resimg">
+            <a href="https://alsterium.github.io/LineStampMaker/"
+              ><img src="./image/image6.png"
+            /></a>
+          </div>
+          <p>※デモはフロントエンド部分のみなので、姿勢推定が出来ません！！※</p>
+          <p>
+            融合デザインプロジェクトC班にて制作したStampを作成するためのプログラムです。
+          </p>
+          <p>
+            バックエンドは@keitahayasaka,@hihicojisanが担当、フロントエンドは@alsterium,他1名が担当。モデルのデザイン、ポスターデザインその他1名担当。
+          </p>
+          <p>
+            ブラウザ側で撮影した画像をローカルサーバーにポストし、受け取った写真からポーズを推定して、3Dモデルに同じポーズをさせたものを文字で修飾してスタンプとして出力します。
+          </p>
+          <div class="responsive">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ep9LUt3VmHU"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
       <div class="col s12 m4 l4 offset-m2 offset-l2">
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal6">
           <div class="card-image">
             <img src="image/image8.png" />
           </div>
@@ -132,9 +219,30 @@
           </div>
         </div>
       </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <h4>レイマーチング手法でのレンダリング</h4>
+          <p>
+            レイマーチングという手法を用いて、シェーダーのみでレンダリングを行います。
+          </p>
+          <p>
+            詳しくは、<a
+              href="https://drive.google.com/open?id=1WiushKRwzBfcAWS_wVa70Rq2JeWvir08"
+              >こちら</a
+            >
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
       <div class="col s12 m4 l4">
         <h5>ㅤ</h5>
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal7">
           <div class="card-image">
             <img src="image/image9.png" />
           </div>
@@ -143,8 +251,27 @@
           </div>
         </div>
       </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <h4>画像合成</h4>
+          <p>多重解像度の画像合成を行うプログラムです。</p>
+          <p>
+            詳しくは<a
+              href="https://drive.google.com/file/d/1tZK9wuOCvDwrpj9bAA7tqXc5EQRchFhG/view?usp=sharing"
+              >こちら</a
+            >
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
       <div class="col s12 m4 l4 offset-m2 offset-l2">
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal8">
           <div class="card-image">
             <img src="image/imagea.png" />
           </div>
@@ -153,15 +280,53 @@
           </div>
         </div>
       </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <h4>CSVから表を生成</h4>
+          <div class="table_app">
+            <iframe
+              src="https://alsterium.github.io/table_app/"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
       <div class="col s12 m4 l4">
         <h5>ㅤ</h5>
-        <div class="card modal-trigger" data-target="modal">
+        <div class="card modal-trigger" data-target="modal9">
           <div class="card-image">
             <img src="image/image13.jpeg" />
           </div>
           <div class="card-content">
             <span class="card-title black-text">IoT温度湿度計</span>
           </div>
+        </div>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <h4>IoT温度湿度計</h4>
+          <p>
+            M5Stackと温度センサを接続し、取得した温湿度をLINE Notify
+            API経由で10分ごとにポストします。本体側液晶には、現在の温湿度と次の送信までのカウントダウン、ステータスコード、温度変化グラフが表示されます。
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
         </div>
       </div>
     </div>
@@ -189,6 +354,9 @@
         // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
         $(".modal").modal();
       });
+      $(document).ready(function(){
+      $('.carousel').carousel({fullWidth: true});
+    });
     </script>
   </body>
 </html>
