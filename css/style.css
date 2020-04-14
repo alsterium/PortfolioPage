@@ -1,12 +1,12 @@
 @font-face{
     font-family: "font";
-    src:url("PortfolioPage/asset/font.woff2")format("woff2"),
-        url("PortfolioPage/asset/font.woff")format("woff");
+    src:url("./PortfolioPage/asset/font.woff2")format("woff2"),
+        url("./PortfolioPage/asset/font.woff")format("woff");
 }
 @font-face{
     font-family: "TTIT";
-    src: url("PortfolioPage/asset/TTIT.woff2")format("woff2"),
-        url("PortfolioPage/asset/TTIT.woff")format("woff");
+    src: url("./PortfolioPage/asset/TTIT.woff2")format("woff2"),
+        url("./PortfolioPage/asset/TTIT.woff")format("woff");
 }
 .TTBBFont{
     font-family: "font";
