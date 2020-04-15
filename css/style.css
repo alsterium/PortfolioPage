@@ -1,7 +1,7 @@
 @font-face{
-    font-family: "font";
-    src:url("../asset/font.woff2")format("woff2"),
-        url("../asset/font.woff")format("woff");
+    font-family: "TTBB";
+    src:url("../asset/TTBB.woff2")format("woff2"),
+        url("../asset/TTBB.woff")format("woff");
 }
 @font-face{
     font-family: "TTIT";
@@ -16,7 +16,7 @@
 }
 
 .TTBBFont{
-    font-family: "font";
+    font-family: "TTBB";
     font-size: 4em;
 }
 
@@ -27,6 +27,10 @@
 
 .TTNLFont{
     font-family: TTNL;
+}
+
+.h5titleSize{
+    font-size: 3em;
 }
 
 .flex{
