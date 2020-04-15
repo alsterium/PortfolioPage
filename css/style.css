@@ -1,21 +1,36 @@
 @font-face{
-    font-family: "font";
-    src:url("/asset/font.woff2")format("woff2"),
-        url("/asset/font.woff")format("woff");
+    font-family: "TTBB";
+    src:url("../asset/TTBB.woff2")format("woff2"),
+        url("../asset/TTBB.woff")format("woff");
 }
 @font-face{
     font-family: "TTIT";
-    src: url("/asset/TTIT.woff2")format("woff2"),
-        url("/asset/TTIT.woff")format("woff");
+    src: url("../asset/TTIT.woff2")format("woff2"),
+        url("../asset/TTIT.woff")format("woff");
 }
+
+@font-face{
+    font-family: "TTNL";
+    src: url("../asset/TTNL.woff2")format("woff2"),
+        url("../asset/TTNL.woff")format("woff");
+}
+
 .TTBBFont{
-    font-family: "font";
+    font-family: "TTBB";
     font-size: 4em;
 }
 
 .TTITFont{
     font-family: TTIT;
     font-size: 1.5em;
+}
+
+.TTNLFont{
+    font-family: TTNL;
+}
+
+.h5titleSize{
+    font-size: 3em;
 }
 
 .flex{
@@ -37,6 +52,12 @@
     height:100%;
 }
 
+.scaleframe iframe{
+    transform: scale(0.5,0.5);
+    transform-origin: 0 0;
+
+}
+
 .resimg img{
-    width:100%;
+    width:65%;
 }
