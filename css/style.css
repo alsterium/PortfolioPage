@@ -8,6 +8,13 @@
     src: url("../asset/TTIT.woff2")format("woff2"),
         url("../asset/TTIT.woff")format("woff");
 }
+
+@font-face{
+    font-family: "TTNL";
+    src: url("../asset/TTNL.woff2")format("woff2"),
+        url("../asset/TTNL.woff")format("woff");
+}
+
 .TTBBFont{
     font-family: "font";
     font-size: 4em;
@@ -16,6 +23,10 @@
 .TTITFont{
     font-family: TTIT;
     font-size: 1.5em;
+}
+
+.TTNLFont{
+    font-family: TTNL;
 }
 
 .flex{
